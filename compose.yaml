@@ -1,0 +1,33 @@
+services:
+  app:
+    image: nextjs
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    depends_on:
+      - db
+    networks:
+      - nextjs
+
+  db:
+    image: mysql:8.4
+    ports:
+      - "3307:3306" # exposes MySQL to your host so DBeaver can connect
+    environment:
+      MYSQL_DATABASE: Addis_E-State
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - nextjs
+
+networks:
+  nextjs:
+
+volumes:
+  dbdata:
