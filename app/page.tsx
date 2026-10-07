@@ -4,6 +4,7 @@ import Hero from "./pages/Hero";
 import FeaturedProperties from "./pages/FeaturedProperties";
 import WhyUs from "./pages/WhyUs";
 import ClientStories from "./pages/ClientStories";
+import CTA from "./pages/CTA";
 
 
 const page = () => {
@@ -13,6 +14,7 @@ const page = () => {
       <FeaturedProperties />
       <WhyUs />
       <ClientStories />
+      <CTA />
     </section>
   );
 };
