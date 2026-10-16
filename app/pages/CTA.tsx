@@ -110,11 +110,10 @@ const CTA = () => {
                                             key={type}
                                             type="button"
                                             onClick={() => setSelectedType(type)}
-                                            className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
-                                                selectedType === type
+                                            className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${selectedType === type
                                                     ? "bg-orange-500 text-white shadow-md shadow-orange-500/25 scale-105"
                                                     : "bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200/80 hover:text-gray-900"
-                                            }`}
+                                                }`}
                                         >
                                             {type}
                                         </button>
@@ -190,7 +189,6 @@ const CTA = () => {
                                         priority
                                     />
 
-                                    {/* Gradient Overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent pointer-events-none" />
 
                                     {/* Floating Badge: Active Advisors */}
