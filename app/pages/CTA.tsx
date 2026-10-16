@@ -111,8 +111,8 @@ const CTA = () => {
                                             type="button"
                                             onClick={() => setSelectedType(type)}
                                             className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${selectedType === type
-                                                    ? "bg-orange-500 text-white shadow-md shadow-orange-500/25 scale-105"
-                                                    : "bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200/80 hover:text-gray-900"
+                                                ? "bg-orange-500 text-white shadow-md shadow-orange-500/25 scale-105"
+                                                : "bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200/80 hover:text-gray-900"
                                                 }`}
                                         >
                                             {type}
@@ -175,7 +175,6 @@ const CTA = () => {
                             </div>
                         </div>
 
-                        {/* Right Column: Visual Showcase & Floating Glass Badges */}
                         <div className="lg:col-span-5 relative flex justify-center items-center">
                             <div className="relative w-full max-w-md lg:max-w-none">
                                 {/* Visual Card Container */}
