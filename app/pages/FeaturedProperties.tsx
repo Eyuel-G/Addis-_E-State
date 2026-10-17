@@ -2,7 +2,7 @@ import Cards from "@/components/cards";
 
 const FeaturedProperties = () => {
     return (
-        <section className="bg-gray-50/50 py-16 px-4 sm:px-8 md:px-16 lg:px-24">
+        <section id="properties" className="bg-gray-50/50 py-16 px-4 sm:px-8 md:px-16 lg:px-24 scroll-mt-20">
             <div className="max-w-7xl mx-auto flex flex-col gap-8">
 
                 <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-orange-100/80 text-orange-600 font-semibold tracking-widest text-xs uppercase w-fit mb-4 shadow-xs">

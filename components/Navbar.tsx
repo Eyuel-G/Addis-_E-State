@@ -62,7 +62,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden absolute top-20 left-0 w-full bg-white border-b border-gray-200 shadow-md py-4 px-6 flex flex-col gap-4 z-40 animate-fade-in text-gray-800">
           <Link href="#" onClick={() => setIsOpen(false)} className="text-orange-500 hover:text-orange-600 font-medium">Home</Link>
-          <Link href="#" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-orange-600 font-medium">Properties</Link>
+          <Link href="#properties" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-orange-600 font-medium">Properties</Link>
           <Link href="#" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-orange-600 font-medium">About</Link>
           <Link href="#" onClick={() => setIsOpen(false)} className="text-gray-800 hover:text-orange-600 font-medium">Contact</Link>
           <div className="flex gap-4 pt-2 border-t border-gray-100">
@@ -78,7 +78,7 @@ const Navbar = () => {
 
       <ul className={`hidden md:flex justify-center text-lg font-medium gap-8 transition-colors ${isScrolled ? "text-gray-800" : "text-white"}`}>
         <li className="hover:text-orange-500 transition-colors"><Link href="#">Home</Link></li>
-        <li className="hover:text-orange-500 transition-colors"><Link href="#">Properties</Link></li>
+        <li className="hover:text-orange-500 transition-colors"><Link href="#properties">Properties</Link></li>
         <li className="hover:text-orange-500 transition-colors"><Link href="#">About</Link></li>
         <li className="hover:text-orange-500 transition-colors"><Link href="#">Contact</Link></li>
       </ul>
