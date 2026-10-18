@@ -1,10 +1,10 @@
 import React from "react";
 import Why_Card from "@/components/Why_Card";
-import { ShieldCheck, Zap, Award, Headphones, Building2, Users } from "lucide-react";
+import { ShieldCheck, Zap, Award, Headphones, Building2 } from "lucide-react";
 
 const WhyUs = () => {
     return (
-        <section className="py-20 px-4 sm:px-8 md:px-16 lg:px-24 bg-gradient-to-b from-white via-orange-50/20 to-white overflow-hidden">
+        <section id="about" className="py-20 px-4 sm:px-8 md:px-16 lg:px-24 bg-gradient-to-b from-white via-orange-50/20 to-white overflow-hidden scroll-mt-20">
             <div className="max-w-7xl mx-auto flex flex-col gap-16">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     <div className="lg:col-span-6 flex flex-col justify-center w-full">

@@ -14,7 +14,6 @@ import {
   ArrowRight,
   RotateCcw,
   Sparkles,
-  Check,
   X,
 } from "lucide-react";
 

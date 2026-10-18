@@ -30,7 +30,7 @@ const stories = [
 
 const ClientStories = () => {
     return (
-        <section className="bg-gradient-to-b from-gray-50/50 via-white to-gray-50/30 py-20 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-25">
+        <section id="stories" className="bg-gradient-to-b from-gray-50/50 via-white to-gray-50/30 py-20 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-25 scroll-mt-20">
             <div className="max-w-7xl mx-auto flex flex-col gap-12">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-gray-100 pb-8">
                     <div className="flex flex-col">

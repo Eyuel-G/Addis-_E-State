@@ -33,7 +33,7 @@ const CTA = () => {
     };
 
     return (
-        <section className="py-20 px-4 sm:px-8 md:px-16 lg:px-24 bg-white relative overflow-hidden">
+        <section id="contact" className="py-20 px-4 sm:px-8 md:px-16 lg:px-24 bg-white relative overflow-hidden scroll-mt-20">
             <div className="max-w-7xl mx-auto">
                 <div className="relative rounded-3xl bg-white text-gray-900 shadow-2xl shadow-orange-500/5 border border-orange-100 p-8 sm:p-12 lg:p-16 overflow-hidden">
                     {/* Ambient Glow Orbs */}

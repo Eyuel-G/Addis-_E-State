@@ -5,7 +5,7 @@ import SearchBar from "@/components/SearchBar";
 
 const Hero = () => {
     return (
-        <main>
+        <main id="home">
             <div
                 className="relative min-h-screen bg-[url('/hero.jpg')] bg-cover bg-center w-full
                       flex flex-col justify-center items-start px-4 sm:px-8 md:px-16 lg:px-24 xl:px-25 pt-24 sm:pt-32 md:pt-36 pb-16 overflow-hidden"
