@@ -95,9 +95,9 @@ const Navbar = () => {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
-          isScrolled
+          isScrolled || isOpen
             ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-gray-900/5 border-b border-gray-100/90 text-gray-800"
-            : "bg-slate-950/25 backdrop-blur-md border-b border-white/10 text-white shadow-xs"
+            : "bg-transparent border-b border-transparent text-white"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -123,7 +123,7 @@ const Navbar = () => {
                 <span className="text-orange-500">Addis_</span>
                 <span
                   className={
-                    isScrolled
+                    isScrolled || isOpen
                       ? "text-blue-600 transition-colors"
                       : "text-blue-400 group-hover:text-blue-300 transition-colors"
                   }
@@ -133,7 +133,7 @@ const Navbar = () => {
               </span>
               <span
                 className={`text-[9px] sm:text-[10px] uppercase font-bold tracking-widest mt-1 ${
-                  isScrolled ? "text-gray-400" : "text-gray-300/80"
+                  isScrolled || isOpen ? "text-gray-400" : "text-gray-200/90"
                 }`}
               >
                 Real Estate • Ethiopia
@@ -209,9 +209,9 @@ const Navbar = () => {
               type="button"
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2.5 rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500/50 cursor-pointer ${
-                isScrolled
+                isScrolled || isOpen
                   ? "text-gray-800 bg-gray-50 hover:bg-gray-100 border-gray-200"
-                  : "text-white bg-white/10 hover:bg-white/20 border-white/20"
+                  : "text-white bg-black/20 hover:bg-black/30 border-white/20"
               }`}
               aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={isOpen}
