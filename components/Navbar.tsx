@@ -114,26 +114,34 @@ const Navbar = () => {
                 alt="Addis E-State Logo"
                 fill
                 sizes="48px"
-                className="object-contain"
+                className={`object-contain transition-all duration-300 ${
+                  isScrolled || isOpen ? "" : "brightness-0 invert"
+                }`}
                 priority
               />
             </div>
             <div className="flex flex-col">
               <span className="text-xl sm:text-2xl font-black italic tracking-tight leading-none flex items-center">
-                <span className="text-orange-500">Addis_</span>
                 <span
-                  className={
+                  className={`transition-colors duration-300 ${
+                    isScrolled || isOpen ? "text-orange-500" : "text-white"
+                  }`}
+                >
+                  Addis_
+                </span>
+                <span
+                  className={`transition-colors duration-300 ${
                     isScrolled || isOpen
-                      ? "text-blue-600 transition-colors"
-                      : "text-blue-400 group-hover:text-blue-300 transition-colors"
-                  }
+                      ? "text-blue-600"
+                      : "text-white"
+                  }`}
                 >
                   EState
                 </span>
               </span>
               <span
-                className={`text-[9px] sm:text-[10px] uppercase font-bold tracking-widest mt-1 ${
-                  isScrolled || isOpen ? "text-gray-400" : "text-gray-200/90"
+                className={`text-[9px] sm:text-[10px] uppercase font-bold tracking-widest mt-1 transition-colors duration-300 ${
+                  isScrolled || isOpen ? "text-gray-400" : "text-white/90"
                 }`}
               >
                 Real Estate • Ethiopia
