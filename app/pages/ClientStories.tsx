@@ -102,7 +102,7 @@ const ClientStories = () => {
                             <HeartHandshake className="w-6 h-6" />
                         </div>
                         <div>
-                            <p className="text-lg font-bold text-gray-900">850+ Deals</p>
+                            <p className="text-lg font-bold text-gray-900">750+ Deals</p>
                             <p className="text-xs text-gray-500 font-medium">Closed for Happy Families</p>
                         </div>
                     </div>
