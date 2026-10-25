@@ -94,11 +94,10 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
-          isScrolled || isOpen
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${isScrolled || isOpen
             ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-gray-900/5 border-b border-gray-100/90 text-gray-800"
             : "bg-transparent border-b border-transparent text-white"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           {/* Brand Logo & Name */}
@@ -114,35 +113,31 @@ const Navbar = () => {
                 alt="Addis E-State Logo"
                 fill
                 sizes="48px"
-                className={`object-contain transition-all duration-300 ${
-                  isScrolled || isOpen ? "" : "brightness-0 invert"
-                }`}
+                className={`object-contain transition-all duration-300 ${isScrolled || isOpen ? "" : "brightness-0 invert"
+                  }`}
                 priority
               />
             </div>
             <div className="flex flex-col">
               <span className="text-xl sm:text-2xl font-black italic tracking-tight leading-none flex items-center">
                 <span
-                  className={`transition-colors duration-300 ${
-                    isScrolled || isOpen ? "text-orange-500" : "text-white"
-                  }`}
+                  className={`transition-colors duration-300 ${isScrolled || isOpen ? "text-orange-500" : "text-white"
+                    }`}
                 >
                   Addis_
                 </span>
                 <span
-                  className={`transition-colors duration-300 ${
-                    isScrolled || isOpen
+                  className={`transition-colors duration-300 ${isScrolled || isOpen
                       ? "text-blue-600"
                       : "text-white"
-                  }`}
+                    }`}
                 >
                   EState
                 </span>
               </span>
               <span
-                className={`text-[9px] sm:text-[10px] uppercase font-bold tracking-widest mt-1 transition-colors duration-300 ${
-                  isScrolled || isOpen ? "text-gray-400" : "text-white/90"
-                }`}
+                className={`text-[9px] sm:text-[10px] uppercase font-bold tracking-widest mt-1 transition-colors duration-300 ${isScrolled || isOpen ? "text-gray-400" : "text-white/90"
+                  }`}
               >
                 Real Estate • Ethiopia
               </span>
@@ -160,15 +155,14 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`px-3.5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
-                    isActive
+                  className={`px-3.5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${isActive
                       ? isScrolled
                         ? "text-orange-600 bg-orange-50/90 font-bold shadow-xs"
                         : "text-white bg-white/20 font-bold shadow-xs"
                       : isScrolled
-                      ? "text-gray-700 hover:text-orange-600 hover:bg-gray-100/70"
-                      : "text-white/85 hover:text-white hover:bg-white/10"
-                  }`}
+                        ? "text-gray-700 hover:text-orange-600 hover:bg-gray-100/70"
+                        : "text-white/85 hover:text-white hover:bg-white/10"
+                    }`}
                 >
                   {link.name}
                 </Link>
@@ -181,11 +175,10 @@ const Navbar = () => {
             <Link href="#contact">
               <button
                 type="button"
-                className={`px-4 py-2 rounded-xl text-sm font-bold transition-all duration-200 cursor-pointer ${
-                  isScrolled
+                className={`px-4 py-2 rounded-xl text-sm font-bold transition-all duration-200 cursor-pointer ${isScrolled
                     ? "text-gray-700 border border-gray-200 hover:border-gray-300 hover:bg-gray-50"
                     : "text-white border border-white/30 hover:bg-white/15"
-                }`}
+                  }`}
               >
                 Login
               </button>
@@ -200,7 +193,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile & Tablet Controls */}
           <div className="flex items-center gap-2.5 lg:hidden">
             {/* Tablet Quick Action CTA (hidden on very small screens) */}
             <Link href="#contact" className="hidden sm:inline-flex">
@@ -216,11 +208,10 @@ const Navbar = () => {
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2.5 rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500/50 cursor-pointer ${
-                isScrolled || isOpen
+              className={`p-2.5 rounded-xl border transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500/50 cursor-pointer ${isScrolled || isOpen
                   ? "text-gray-800 bg-gray-50 hover:bg-gray-100 border-gray-200"
                   : "text-white bg-black/20 hover:bg-black/30 border-white/20"
-              }`}
+                }`}
               aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={isOpen}
               aria-controls="mobile-navigation"
@@ -233,9 +224,8 @@ const Navbar = () => {
 
       {/* Mobile Backdrop Overlay */}
       <div
-        className={`fixed inset-0 bg-black/60 backdrop-blur-xs z-40 lg:hidden transition-opacity duration-300 ${
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
+        className={`fixed inset-0 bg-black/60 backdrop-blur-xs z-40 lg:hidden transition-opacity duration-300 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
         onClick={() => setIsOpen(false)}
         aria-hidden="true"
       />
@@ -243,11 +233,10 @@ const Navbar = () => {
       {/* Mobile Drawer Menu */}
       <div
         id="mobile-navigation"
-        className={`fixed top-20 left-0 right-0 z-40 lg:hidden transition-all duration-300 ease-out origin-top ${
-          isOpen
+        className={`fixed top-20 left-0 right-0 z-40 lg:hidden transition-all duration-300 ease-out origin-top ${isOpen
             ? "opacity-100 translate-y-0 scale-y-100 pointer-events-auto"
             : "opacity-0 -translate-y-4 scale-y-95 pointer-events-none"
-        }`}
+          }`}
         aria-hidden={!isOpen}
       >
         <div className="mx-4 sm:mx-6 my-2 bg-white/98 backdrop-blur-2xl rounded-2xl shadow-2xl border border-gray-100 p-4 sm:p-6 text-gray-800 flex flex-col gap-3">
@@ -260,28 +249,25 @@ const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`flex items-center justify-between px-4 py-3 rounded-xl font-semibold text-sm transition-colors ${
-                    isActive
+                  className={`flex items-center justify-between px-4 py-3 rounded-xl font-semibold text-sm transition-colors ${isActive
                       ? "bg-orange-50 text-orange-600 font-bold"
                       : "text-gray-700 hover:bg-gray-50 hover:text-orange-500"
-                  }`}
+                    }`}
                 >
                   <span className="flex items-center gap-3">
                     <span
-                      className={`p-1.5 rounded-lg ${
-                        isActive
+                      className={`p-1.5 rounded-lg ${isActive
                           ? "bg-orange-100 text-orange-600"
                           : "bg-gray-100 text-gray-500"
-                      }`}
+                        }`}
                     >
                       {link.icon}
                     </span>
                     <span>{link.name}</span>
                   </span>
                   <ChevronRight
-                    className={`w-4 h-4 ${
-                      isActive ? "text-orange-500" : "text-gray-400"
-                    }`}
+                    className={`w-4 h-4 ${isActive ? "text-orange-500" : "text-gray-400"
+                      }`}
                   />
                 </Link>
               );
@@ -310,7 +296,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Direct Support Hotline in Mobile Menu */}
           <div className="pt-2 text-center border-t border-gray-100/80">
             <a
               href="tel:+251911000000"
