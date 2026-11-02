@@ -7,13 +7,13 @@ const Footer = () => {
         <div className="flex flex-col">
             <div>
                 <div>
-                    <Image src="/logo.png" alt="logo" width="50" height="50"/>
+                    <Image src="/logo.png" alt="logo" width="50" height="50" />
                 </div>
             </div>
 
             <div className="flex justify-evenly">
                 <div>
-                    <i>@2026 Addis E-State. All rights reserved.</i>
+                    <i>@2026 Addis E-State. All rights reserved!</i>
                 </div>
                 <div className="flex gap-6">
                     <FiFacebook className='w-5 h-5' />
@@ -21,13 +21,13 @@ const Footer = () => {
                     <FiTwitter className='w-5 h-5' />
                     <FiYoutube className='w-5 h-5' />
                 </div>
-                <div className="flex gap-4">  
+                <div className="flex gap-4">
                     <i><a href="#"
                         className="hover:text-orange-600"
-                        >Privacy Policy</a></i>
+                    >Privacy Policy</a></i>
                     <i><a href="#"
                         className="hover:text-orange-600"
-                        >Terms of Service</a></i>
+                    >Terms of Service</a></i>
                 </div>
             </div>
         </div>
