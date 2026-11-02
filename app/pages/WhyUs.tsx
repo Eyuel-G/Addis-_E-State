@@ -65,7 +65,7 @@ const WhyUs = () => {
                         <Why_Card
                             icon={<Headphones className="w-6 h-6" />}
                             title="24/7 Support"
-                            description="Our dedicated support team is always one call away — in Amharic, Oromo, or English."
+                            description="Our dedicated support team is always one call away in Amharic, Oromo, or English."
                         />
                     </div>
                 </div>
