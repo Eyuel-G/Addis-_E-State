@@ -1,21 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Phone, Mail, MapPin, ChevronRight, ShieldCheck } from "lucide-react";
 import {
   FiFacebook,
   FiInstagram,
   FiTwitter,
   FiYoutube,
-  FiPhone,
-  FiMail,
-  FiMapPin,
-  FiArrowUp,
-  FiSend,
-  FiCheck,
 } from "react-icons/fi";
-import { ChevronRight, ShieldCheck } from "lucide-react";
 
 const quickLinks = [
   { name: "Buy Property", href: "#properties" },
@@ -43,34 +37,7 @@ const services = [
   { name: "Property Management", desc: "Tenant & rental oversight" },
 ];
 
-const socialLinks = [
-  { icon: FiFacebook, href: "https://facebook.com", label: "Facebook" },
-  { icon: FiInstagram, href: "https://instagram.com", label: "Instagram" },
-  { icon: FiTwitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: FiYoutube, href: "https://youtube.com", label: "YouTube" },
-];
-
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email.trim()) return;
-    setIsSubscribed(true);
-    setTimeout(() => {
-      setIsSubscribed(false);
-      setEmail("");
-    }, 4000);
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <footer className="bg-gray-800 text-gray-300 pt-16 sm:pt-20 pb-12 px-4 sm:px-8 md:px-16 lg:px-24 border-t border-gray-800/80 relative overflow-hidden">
       {/* Subtle top edge gradient highlight */}
@@ -123,7 +90,7 @@ const Footer = () => {
                 className="flex items-center gap-3 text-sm text-gray-300 hover:text-orange-400 transition-colors group"
               >
                 <div className="w-8 h-8 rounded-lg bg-gray-900 border border-gray-800 flex items-center justify-center text-orange-400 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all shrink-0">
-                  <FiPhone className="w-4 h-4" />
+                  <Phone className="w-4 h-4" />
                 </div>
                 <span className="font-medium">+251 911 123 456</span>
               </a>
@@ -133,14 +100,14 @@ const Footer = () => {
                 className="flex items-center gap-3 text-sm text-gray-300 hover:text-orange-400 transition-colors group"
               >
                 <div className="w-8 h-8 rounded-lg bg-gray-900 border border-gray-800 flex items-center justify-center text-orange-400 group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-all shrink-0">
-                  <FiMail className="w-4 h-4" />
+                  <Mail className="w-4 h-4" />
                 </div>
                 <span className="font-medium">addise_estate@gmail.com</span>
               </a>
 
               <div className="flex items-center gap-3 text-sm text-gray-300">
                 <div className="w-8 h-8 rounded-lg bg-gray-900 border border-gray-800 flex items-center justify-center text-orange-400 shrink-0">
-                  <FiMapPin className="w-4 h-4" />
+                  <MapPin className="w-4 h-4" />
                 </div>
                 <span className="font-medium">Bole Atlas, Addis Ababa, Ethiopia</span>
               </div>
@@ -217,8 +184,6 @@ const Footer = () => {
           </div>
         </div>
 
-
-
         {/* Bottom Bar: Copyright, Socials & Legal */}
         <div className="pt-8 border-t border-gray-800/80 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-gray-400">
           {/* Copyright */}
@@ -230,24 +195,45 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="order-1 md:order-2 flex items-center gap-2.5">
-            {socialLinks.map((social) => {
-              const Icon = social.icon;
-              return (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="w-9 h-9 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 hover:scale-105 shadow-xs"
-                >
-                  <Icon className="w-4 h-4" />
-                </a>
-              );
-            })}
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="w-9 h-9 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 hover:scale-105 shadow-xs"
+            >
+              <FiFacebook className="w-4 h-4" />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="w-9 h-9 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 hover:scale-105 shadow-xs"
+            >
+              <FiInstagram className="w-4 h-4" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              className="w-9 h-9 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 hover:scale-105 shadow-xs"
+            >
+              <FiTwitter className="w-4 h-4" />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="w-9 h-9 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-orange-500 hover:border-orange-500 transition-all duration-300 hover:scale-105 shadow-xs"
+            >
+              <FiYoutube className="w-4 h-4" />
+            </a>
           </div>
 
-          {/* Legal Links & Back to Top */}
+          {/* Legal Links */}
           <div className="order-3 flex items-center gap-4">
             <Link
               href="#contact"
