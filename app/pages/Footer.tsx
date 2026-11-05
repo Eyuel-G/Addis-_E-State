@@ -123,7 +123,6 @@ const Footer = () => {
           {/* Column 2: Quick Links */}
           <div className="sm:col-span-1 lg:col-span-2 flex flex-col">
             <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-5 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
               Quick Links
             </h4>
             <ul className="flex flex-col gap-3">
@@ -144,7 +143,6 @@ const Footer = () => {
           {/* Column 3: Neighborhoods */}
           <div className="sm:col-span-1 lg:col-span-3 flex flex-col">
             <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-5 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
               Neighborhoods
             </h4>
             <ul className="flex flex-col gap-3">
@@ -166,7 +164,6 @@ const Footer = () => {
           {/* Column 4: Services */}
           <div className="sm:col-span-2 lg:col-span-3 flex flex-col">
             <h4 className="text-white font-bold text-sm tracking-wider uppercase mb-5 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
               Our Services
             </h4>
             <ul className="flex flex-col gap-3.5">
