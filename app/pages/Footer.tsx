@@ -58,12 +58,12 @@ const Footer = () => {
               className="inline-flex items-center gap-3 group focus:outline-none w-fit mb-5"
               aria-label="Addis E-State Home"
             >
-              <div className="relative h-11 w-11 rounded-xl bg-white p-1.5 flex items-center justify-center shadow-md shadow-orange-500/10 group-hover:scale-105 transition-transform duration-300 shrink-0">
+              <div className="relative h-17 w-17 rounded-xl p-1 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shrink-0">
                 <Image
                   src="/logo.png"
                   alt="Addis E-State Logo"
-                  width={34}
-                  height={34}
+                  width={38}
+                  height={38}
                   className="object-contain"
                 />
               </div>
