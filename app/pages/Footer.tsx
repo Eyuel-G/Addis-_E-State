@@ -52,7 +52,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
           {/* Column 1: Brand & Contact Info */}
           <div className="sm:col-span-2 lg:col-span-4 flex flex-col">
-            {/* Brand Header */}
             <Link
               href="#home"
               className="inline-flex items-center gap-3 group focus:outline-none w-fit mb-5"
